@@ -1,0 +1,12 @@
+---
+applications:
+- name: uaa-sample
+  memory: 128M
+  host: uaa-sample
+  buildpack: https://github.com/cloudfoundry/buildpack-ruby.git
+  env:
+    SSO_HOST: https://idaas.ng.bluemix.net
+    SSO_TOKEN_PATH: /sps/oauth20sp/oauth20/token
+    SSO_AUTHORIZE_PATH: /sps/oauth20sp/oauth20/authorize
+    PROFILE_PATH: /idaas/resources/profile.jsp
+    SSO_LOGOUT_PATH: /idaas/protected/logout.jsp
