@@ -1,8 +1,8 @@
 ---
 applications:
-- name: uaa-sample
+- name: sso-oauth2-sample
   memory: 128M
-  host: uaa-sample
+  host: sso-oauth2-sample
   buildpack: https://github.com/cloudfoundry/buildpack-ruby.git
   env:
     SSO_HOST: https://idaas.ng.bluemix.net
