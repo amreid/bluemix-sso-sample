@@ -32,7 +32,7 @@ Run the following commands from the cloned repository (e.i. bluemix-sso-sample).
     $ cf push
 
 
-## Add Single Sign On Service
+### Add Single Sign On Service
 Login to [Bluemix](https://ace.ng.bluemix.net) and go to the Dashboard page where the sso sample application was deployed. Click on the ADD A SERVICE button, and usder Security click on the Single Sign On service. In the dropdown for the App, select the name you gave to the application you deployed, and then hit the CREATE button. Hit OK when asked to restage the application.
 
 Next click on the Single Sign On service which will bring up its configuration page.
@@ -46,11 +46,11 @@ Click Save, and next you will be given the applications Client Identifier and Cl
 
 
 
-## Configure the Application Credentials
+### Configure the Application Credentials
 Next we will configure the application environment variables which the application will used to access the Client Identifier and Client Secret.
 
-    $ cf set-env my-sso--sample  CLIENT_ID wJytqIdZ61XXXXXXX
-    $ cf set-env my-sso--sample  CLIENT_SECRET 3Bhr2spmXXXXXXXXXX
+    $ cf set-env my-sso-sample CLIENT_ID wJytqIdZ61XXXXXXX
+    $ cf set-env my-sso-sample CLIENT_SECRET 3Bhr2spmXXXXXXXXXX
     $ cf restage my-sso-sample
 
 
