@@ -5,7 +5,7 @@ Sample Ruby application showing how to integrate with the IBM Bluemix Single Sig
 
 This sample shows how to fetch the logged in users profile information from within a simple Ruby Sinatra application. The application must be registered with the IBM SSO Service and the user must then grant the application access to their profile. The steps below will take you through this process.
   
-To understand how the authentication code works you should view the [main Ruby application file](app.rb) and follow the flow from the /profile to the /auth/oauth2/callback routes.
+To understand how the authentication code works you should view the [main Ruby application file](app.rb) and follow the flow from the /profile to the /auth/oauth2/callback routes. From here you will see how to redirect to the sso service, and then from the oauth callback how to get the bearer token, which can then be used to request the user's profile.
 
 
 ## Installation
