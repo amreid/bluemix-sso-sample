@@ -1,8 +1,8 @@
 ---
 applications:
-- name: sso-oauth2-sample
+- name: sso-oauth2-eidsample
   memory: 128M
-  host: sso-oauth2-sample
+  host: sso-oauth2-eidsample
   buildpack: https://github.com/cloudfoundry/buildpack-ruby.git
   env:
     SSO_HOST: https://idaas.ng.bluemix.net
